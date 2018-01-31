@@ -1,0 +1,86 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.search-form {
+    position: relative;
+    z-index: 1;
+}
+
+.io-search-results {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 5px;
+    width: 100%;
+    background: #0e2233;
+}
+
+.io-search-results .io-row {
+    display: flex;
+    padding: 10px 15px;
+    flex-wrap: wrap;
+    text-align: left;
+    opacity: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+}
+
+.io-search-results .io-row .io-thumb {
+    float: left;
+    max-width: 20%;
+}
+
+.io-search-results .io-row .io-thumb img {
+    width: 100%;
+    height: auto;
+}
+
+.io-search-results .io-row .io-content {
+    padding-left: 10px;
+    max-width: 80%;
+    margin-top: -3px;
+}
+
+.io-search-results .io-row .io-content > h3 {
+    font-size: 16.5px;
+    font-family: 'Calluna';
+    font-weight: 300;
+    float: left;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 2px;
+    text-align: left;
+    width: 100%;
+    color: #c7a320;
+    line-height: normal;
+}
+
+.io-search-results .io-row .io-content > span {
+    font-size: 12.5px;
+    text-align: left;
+    font-family: 'Lato';
+    word-wrap: break-word;
+    color: #fff;
+    font-weight: 300;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    line-height: normal;
+}
+
+.io-search-results .loadingIndicator {
+    max-height: 45px;
+    display: block;
+    margin: 25px auto;
+}
+
+.io-search-results .io-allresults {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    color: rgba(255,255,255,0.8);
+    font-weight: 300;
+}
